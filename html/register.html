@@ -6,23 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form >
+    <form action="main.html" method="post">
         
         <fieldset>
         <legend>Inscription</legend>
             <div>
             <label for="username">entrer vorte nom : </label>
-            <input type="text" placeholder="Nom d'utilisateur" id="username" required>
+            <input autofocus type="text" placeholder="Nom d'utilisateur" id="username" required>
         </div>
 
         <div>
             <label for="email">enter votre Email : </label>
-            <input type="email" placeholder="Email" id="email" required>
+            <input minlength="8" type="email" placeholder="Email" id="email" required>
         </div>
 
         <div>
             <label for="password">entrer votre mot de passe : </label> <br>
-             <input type="password" placeholder="Mot de passe" id="password" required>
+             <input minlength="8" type="password" placeholder="Mot de passe" id="password" required>
         </div>
        
         <div>
@@ -37,7 +37,46 @@
 
         </div>
 
-        <button id="register-button">S'inscrire</button>
+        <form action="">
+            <div>
+                <label for="slect"></label>
+                <select required name="filiere" id="slect">
+                    <option  value="none" selected disabled hidden>Choisir votre filiére</option>
+                    
+
+                    <optgroup label="Licence">
+                        <option value="">LSIM</option>
+                        <option value="">LISI</option>
+                        <option value="">LAM</option>
+                        <option value="">LTIC</option>
+                    </optgroup>
+                    
+                    <optgroup label="cpi">
+                        <option value="cpi 1">cpi 1</option>
+                        <option value="cpi 2">cpi 2</option>
+                    </optgroup>
+
+                    <optgroup label="master">
+                        <option value="master 1">MRSIM</option>
+                        <option value="master 2">MR</option>
+                        <option value="master 3">MPSE & iot</option>
+                        <option value="master 4">MPSSI</option>
+                    </optgroup>
+
+                    <optgroup label="ingénieur">
+                        <option value="FISE 1">FISE 1</option>
+                        <option value="FISE 2">FISE 2</option>
+                        <option value="FISE 3">FISE 3</option>
+                        <option value="FIGL 1">FIGL 1</option>
+                        <option value="FIGL 2">FIGL 2</option>
+                        <option value="FIGL 3">FIGL 3</option>
+                    </optgroup>
+                
+                </select>
+            </div> <br>
+        </form>
+
+        <input type="submit" value="S'inscrire" id="register-button">
         <br> <br>
         </fieldset> <br>
 
