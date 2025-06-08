@@ -1,0 +1,228 @@
+/* Variables et Reset */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --accent-color: #f72585;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --gray-color: #6c757d;
+    --light-gray: #e9ecef;
+    --success-color: #4cc9f0;
+    
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+/* Structure Principale */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--gray-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sections */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.highlight {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Grille de fonctionnalités */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.feature-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Liste d'avantages */
+.benefits-list {
+    margin: var(--spacing-xl) 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.benefit-icon {
+    color: var(--success-color);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+/* Témoignage */
+.testimonial {
+    background: white;
+    padding: var(--spacing-lg);
+    border-left: 4px solid var(--primary-color);
+    margin: var(--spacing-xl) 0;
+    box-shadow: var(--box-shadow);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+}
+
+.testimonial footer {
+    font-weight: bold;
+    color: var(--gray-color);
+}
+
+/* Section CTA */
+.cta-section {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.05), rgba(58, 12, 163, 0.05)));
+    border-radius: var(--border-radius);
+}
+
+.cta-section h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary-color);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
