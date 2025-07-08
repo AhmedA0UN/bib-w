@@ -14,6 +14,27 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Dark Mode Toggle Styles */
+input[type="checkbox"][name="dark-mode-toggle"] {
+    margin-left: 20px;
+    transform: scale(1.2);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+label[for="dark-mode-toggle"] {
+    color: #623c64;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+body.dark label[for="dark-mode-toggle"] {
+    color: #90caf9;
+}
+
+
+
 /* Mode sombre */
 body.dark {
     background-color: #222;
