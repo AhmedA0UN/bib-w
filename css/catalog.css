@@ -1,0 +1,16 @@
+body{
+
+    border: 1px solid black;
+    padding: 20px;
+    background:gainsboro;
+    margin: 330px 400px auto;
+}
+h3{
+    color: darkred;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+p{
+    color: dimgrey;
+    ;
+}

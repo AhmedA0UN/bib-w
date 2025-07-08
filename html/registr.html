@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Inscription - Bibliothèque ISIMG</title>
+</head>
+<body>
+    <div class="register-container">
+        <header>
+            <h1>Créer un compte</h1>
+            <p>Rejoignez la communauté de la Bibliothèque ISIMG</p>
+        </header>
+
+        <main>
+            <form class="register-form" action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="username">Nom complet</label>
+                        <input type="text" id="username" name="username" placeholder="Votre nom complet" required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" minlength="8" required>
+                        <small>Minimum 8 caractères</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmer le mot de passe</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="birthdate">Date de naissance</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filiere">Filière</label>
+                        <select id="filiere" name="filiere" required>
+                            <option value="" selected disabled hidden>Choisissez votre filière</option>
+                            <optgroup label="Licence">
+                                <option value="LSIM">LSIM</option>
+                                <option value="LISI">LISI</option>
+                                <option value="LAM">LAM</option>
+                                <option value="LTIC">LTIC</option>
+                            </optgroup>
+                            <optgroup label="CPI">
+                                <option value="CPI1">CPI 1</option>
+                                <option value="CPI2">CPI 2</option>
+                            </optgroup>
+                            <optgroup label="Master">
+                                <option value="MRSIM">MRSIM</option>
+                                <option value="MRETCA">MRETCA</option>
+                                <option value="MPSE">MPSE & IoT</option>
+                                <option value="MPSSI">MPSSI</option>
+                            </optgroup>
+                            <optgroup label="Ingénieur">
+                                <option value="FISE1">FISE 1</option>
+                                <option value="FISE2">FISE 2</option>
+                                <option value="FISE3">FISE 3</option>
+                                <option value="FIGL1">FIGL 1</option>
+                                <option value="FIGL2">FIGL 2</option>
+                                <option value="FIGL3">FIGL 3</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="register-button">S'inscrire</button>
+
+                <div class="form-footer">
+                    <p>Déjà membre ? <a href="logiin.html">Connectez-vous</a></p>
+                    <a href="main.html" class="back-home">← Retour à l'accueil</a>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

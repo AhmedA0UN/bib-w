@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contact.css">
-    <title>Document</title>
+    <link rel="icon" href="../js/contact.js" type="image/x-icon">
+    <title>Contact - Bibliothèque ISIMG</title>
 </head>
 <body>
-     <form action="">
-            <div>
-                <label for="additional-info">informations supplémentaires : </label> <br> <br>
-                <textarea maxlength="1000" name="additional-info" id="additional-info" cols="100" rows="15" placeholder="Informations supplémentaires"></textarea>
-            <div>
-    </form>
-    <input type="submit" value="Envoyer" id="submit-button"> <br>
-    <a href="main.html">Retourner à la page d'Accueil</a>
+    <header>
+        <h1>Contactez-nous</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="abouut.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Sujet :</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="additional-info">Message :</label>
+                <textarea id="additional-info" name="additional-info" maxlength="1000" 
+                          placeholder="Votre message (1000 caractères max)" required></textarea>
+                <div class="char-count"><span id="counter">1000</span> caractères restants</div>
+            </div>
+            
+            <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+        
+        <div class="back-link">
+            <a href="main.html">← Retour à l'accueil</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Bibliothèque ISIMG. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/contact.js"></script>
 </body>
 </html>
