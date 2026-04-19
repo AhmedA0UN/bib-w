@@ -1,16 +1,8 @@
 # bib-web
 
-# 
+## Captures d'ecran
 
-# \## Captures d’écran
+### Vue principale
 
-# 
-
-# \### Vue principale
-
-# 
-
-# !\[biblio isimg - Vue principale](sources/bib-isimg.png)
-
-# 
+![biblio isimg - Vue principale](sources/bib-isimg.png)
 
