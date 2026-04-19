@@ -9,5 +9,4 @@
 	Votre navigateur ne supporte pas la lecture video.
 </video>
 
-[Voir la video bib-isimg.mp4](sources/bib-isimg.mp4)
 
