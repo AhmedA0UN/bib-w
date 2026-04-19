@@ -4,5 +4,5 @@
 
 ### Vue principale
 
-![biblio isimg - Vue principale](sources/bib-isimg.png)
+![biblio isimg - Vue principale](sources/bib-isimg.mp4)
 
