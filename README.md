@@ -10,5 +10,5 @@
 
 
 
-!\[SuperEdu - Vue principale](sources/bib isimg.mp4)
+!\[biblio isimg - Vue principale](sources/bib isimg.mp4)
 
