@@ -4,5 +4,8 @@
 
 ### Vue principale
 
-![biblio isimg - Vue principale](sources/bib-isimg.mp4)
+<video controls width="800">
+	<source src="sources/bib-isimg.mp4" type="video/mp4">
+	Votre navigateur ne supporte pas la lecture video.
+</video>
 
